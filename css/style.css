@@ -1,0 +1,91 @@
+/* RESET */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-image: url(../assets/fondo.png);
+}
+
+header {
+    background-color: #c1ddf3;
+}
+
+header img {
+    height: 200px;
+    width: auto;
+    border-radius: 100px;
+}
+aside img {
+    width: 400px;
+    height: auto;
+}
+nav a {
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav img{
+    width: 30px;
+    height: 30px;
+}
+
+.descuento10 h3 {
+    background-color: rgb(157, 235, 163);
+}
+
+.descuento20 h3 {
+    background-color: rgb(109, 214, 118);
+}
+
+.form-login {
+    height: 400px;
+    background-image: url(../assets/account.jpg);
+}
+
+.coleccion-card {
+    width: 400px;    
+}
+
+.coleccion-card img {
+    width: 100%;
+    border-radius: 30px;
+}
+
+footer img {
+    height: 30px;
+    width: 30px;
+}
+
+.articulo-carrito {
+    width: 200px;
+}
+
+.articulo-carrito img {
+    width: 100%;
+    border-radius: 30px;
+}
+
+.total-compra {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+footer p {
+    background-color: rgba(85, 82, 82, 0.568);
+    color: white;
+    text-align: center;
+}
