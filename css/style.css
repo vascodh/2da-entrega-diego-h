@@ -14,11 +14,11 @@ html {
 }
 /* GRID LAYOUT */
 .grid-container {
-    padding-right: 50px;
-    padding-left: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
     display: grid;
-    grid-template-columns: 0.5fr 1fr 1fr;
-    grid-template-rows: 0.5fr 2fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 2fr 0.3fr;
     grid-template-areas:
     "header header header"
     "main   main   main"
@@ -115,6 +115,9 @@ h3 {
     font-size: 1.5em;
     font-weight: 600;
 }
+.faqs article {
+    text-align: center;
+}
 footer {
     grid-area: footer;
 }
@@ -135,4 +138,25 @@ footer {
     background-color: rgba(85, 82, 82, 0.568);
     color: white;
     text-align: center;
+}
+
+
+@media (max-width: 480px) {
+    .grid-container {
+        margin-left: 0px;
+        margin-right: 0px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.3fr 3fr 1fr;
+        grid-template-areas:
+        "header header"
+        "main   main"        
+        "footer footer"
+        ;
+    }
+    .logo-celestina {
+        height: 100px;
+        width: auto;
+        border-radius: 100px;        
+    }
 }

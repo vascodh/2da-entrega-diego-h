@@ -15,28 +15,53 @@
 <body>
     <!-- Link a whimsical: https://whimsical.com/celestina-web-XTJEsA71JrCq5xrHi3HeV1-->
 <div class = "grid-container">    
-    <header>
-        <img src="../assets/logo.jpg" alt="Logo celestina tienda de calzado urbano">
-        <h1>Celestina</h1>
-        <h2>Tienda de Calzado urbano</h2>
-        <nav class = "cont-menu"> 
-            <ul class="lista-menu">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../pages/urbanas.html">Urbanas</a></li>
-                <li><a href="../pages/urbanos.html">Urbanos</a></li>
-                <li><a href="../pages/ofertas.html">Ofertas</a></li>
-                <li><a href="../pages/faqs.html">Faqs</a></li>
-                <li><a href="../pages/login.html"><img src="../assets/user.svg" alt="Logo ingreso y registro">Login</a></li>  
-                <li><a href="../pages/carrito.html"><img src="../assets/cart.svg" alt="Carrito de compras">Carrito</a></li>                              
+  <header>
+    <nav class="navbar navbar-expand-lg flex-grow-1" style="background-color: #bee4ff;">
+        <div class="container-fluid">
+            <a class="navbar-brand fs-5 fw-bold text-wrap" href="../index.html"><img class = "logo-celestina" src="../assets/logo.jpg" alt="Logo celestina tienda de calzado urbano">
+            Tienda de calzado urbano
+            </a>          
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-auto">
+              <li class="nav-item">
+                <a class="nav-link"  href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-primary fw-bold" aria-current="page" href="../pages/urbanas.html">Urbanas</a>
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/urbanos.html">Urbanos</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/ofertas.html">Ofertas</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/faqs.html">Faqs</a>
+              </li>                                     
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/login.html"><img src="../assets/user.svg" alt="Logo ingreso y registro" width="30" height="auto">Login</a></li>  
+              </li>                                     
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/carrito.html"><img src="../assets/cart.svg" alt="Logo ingreso y registro" width="30" height="auto">Carrito</a></li>  
+              </li>                                                      
             </ul>
-        </nav>
-    </header>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-outline-secondary" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+</header>
     <main>
         <h2>Urbanas</h2>
         <h3>Colección Otoño - Invierno 🍂❄️</h3>
         <hr>
         <section class = "colecciones">
-            <article class="card text-center border-info" style="width: 18rem;">               
+            <article class="card text-center border-info mt-4" style="width: 18rem;">               
                 <img src="../assets/art-001.jpg" class = "card-img-top" alt="calzado de mujer">
                 <div class="card-body">
                   <h5 class="card-title">Articulo ###</h5>
@@ -45,7 +70,7 @@
                   <a href="#" class="btn btn-secondary btn-sm">Agregar al carrito</a>
                 </div>
             </article>
-            <article class="card text-center border-info" style="width: 18rem;">
+            <article class="card text-center border-info mt-4" style="width: 18rem;">
                 <img src="../assets/art-002.jpg" class = "card-img-top" alt="calzado de mujer">
                 <div class="card-body">
                   <h5 class="card-title">Articulo ###</h5>
@@ -54,7 +79,7 @@
                   <a href="#" class="btn btn-secondary btn-sm">Agregar al carrito</a>
                 </div>
             </article>
-            <article class="card text-center border-info" style="width: 18rem;">
+            <article class="card text-center border-info mt-4" style="width: 18rem;">
                 <img src="../assets/art-003.jpg" class = "card-img-top" alt="calzado de mujer">
                 <div class="card-body">
                   <h5 class="card-title">Articulo ###</h5>
@@ -63,7 +88,7 @@
                   <a href="#" class="btn btn-secondary btn-sm">Agregar al carrito</a>
                 </div>
             </article>
-            <article class="card text-center border-info" style="width: 18rem;">
+            <article class="card text-center border-info mt-4" style="width: 18rem;">
                 <img src="../assets/art-004.jpg" class = "card-img-top" alt="calzado de mujer">
                 <div class="card-body">
                   <h5 class="card-title">Articulo ###</h5>
@@ -86,6 +111,8 @@
         <!--copyright-->
         <p> Hornero dev's | Coderhouse | Diego Harosteguy | 2024</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>        
 </div>
 </body>
 </html>
