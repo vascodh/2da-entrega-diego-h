@@ -34,6 +34,7 @@ header {
     grid-area: header;
     display: flex;
     flex-wrap: wrap;
+    background-color: #bee4ff;
 }
 .logo-celestina {
     height: 200px;
@@ -59,14 +60,20 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    border-top: 1px solid rgb(189, 189, 189);
 }
 .coleccion-card {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    margin: 10px;
+    height: 550px;
+    margin: 10px;    
+}
 
+.coleccion-card img {
+    height: 90%;
+    border-radius: 30px;
 }
 
 .descuento10 h3 {
@@ -88,19 +95,6 @@ h3 {
     align-items: center;
 }
 
-.coleccion-card {
-    height: 550px;    
-}
-
-.coleccion-card img {
-    height: 90%;
-    border-radius: 30px;
-}
-
-.foot img {
-    height: 30px;
-    width: 30px;
-}
 
 .articulo-carrito {
     width: 200px;
@@ -125,9 +119,19 @@ footer {
     display: flex;
     flex-direction: column;
 }
+
+.foot img {
+    height: 30px;
+    width: 30px;
+}
+
 .redes {
     display: flex;
-    justify-content: space-evenly
+    justify-content: space-evenly;
+    border-top: 1px solid rgb(189, 189, 189);
+    border-bottom: 1px solid rgb(189, 189, 189);
+    margin: 25px 0 20px;
+    padding: 20px 20px;    
 }
 .redes img:hover {
     height: 40px;
