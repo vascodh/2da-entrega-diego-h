@@ -1,0 +1,190 @@
+/* ### Reset #### */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  font-family: "Dosis", sans-serif;
+}
+
+/* GRID LAYOUT */
+.grid-container {
+  margin-right: 50px;
+  margin-left: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 2fr 0.3fr;
+  grid-template-areas: "header header header" "main   main   main" "footer footer footer";
+}
+
+/* BODY */
+body {
+  background-image: url("../assets/fondo.png");
+}
+
+/* Header */
+header {
+  grid-area: header;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #bee4ff;
+}
+
+.logo-celestina {
+  height: 150px;
+  width: auto;
+  border-radius: 80px;
+}
+
+main {
+  grid-area: main;
+}
+
+h1 {
+  display: inline-block;
+  margin: 0px 10px;
+}
+
+h2 {
+  font-weight: bold;
+  font-style: oblique;
+  margin: 10px;
+  text-align: center;
+}
+
+h3 {
+  margin: 10px;
+  text-align: center;
+}
+
+.colecciones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  border-top: 1px solid rgb(189, 189, 189);
+}
+
+.colecciones-w-card {
+  width: 18rem;
+}
+
+.subtitle {
+  border-bottom: 1px solid rgb(189, 189, 189);
+  padding-bottom: 10px;
+}
+
+.coleccion-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 550px;
+  margin: 10px;
+}
+.coleccion-card img {
+  height: 90%;
+  border-radius: 30px;
+}
+
+.descuento10 {
+  background-color: rgb(157, 235, 163);
+}
+
+.descuento20 {
+  background-color: rgb(109, 214, 118);
+}
+
+.register-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.register-image {
+  height: 400px;
+  width: 370px;
+  background-image: url("../assets/account.jpg");
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.total-compra {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.faqs article {
+  text-align: center;
+}
+
+/* #### FOOTER #### */
+footer {
+  grid-area: footer;
+}
+
+.foot {
+  display: flex;
+  flex-direction: column;
+}
+.foot img {
+  height: 30px;
+  width: 30px;
+}
+.foot p {
+  background-color: rgba(85, 82, 82, 0.568);
+  color: white;
+  text-align: center;
+}
+
+.redes {
+  display: flex;
+  justify-content: space-evenly;
+  border-top: 1px solid rgb(189, 189, 189);
+  border-bottom: 1px solid rgb(189, 189, 189);
+  margin: 25px 0 20px;
+  padding: 20px 20px;
+}
+
+.redes img:hover {
+  height: 40px;
+  width: 40px;
+}
+
+/* ### Media queries #### */
+@media (max-width: 768px) {
+  .grid-container {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+@media (max-width: 480px) {
+  .grid-container {
+    margin-left: 0px;
+    margin-right: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 3fr 0.1fr;
+    grid-template-areas: "header header" "main   main" "footer footer";
+  }
+  h1 {
+    display: block;
+  }
+  .logo-celestina {
+    height: 100px;
+    width: auto;
+    border-radius: 100px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

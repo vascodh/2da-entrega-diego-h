@@ -1,0 +1,15 @@
+// HEADER
+/* Header */
+header {
+    grid-area: header;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $bg-color-header;
+}
+
+.logo-celestina {
+    height: 150px;
+    width: auto;
+    border-radius: 80px;
+}
+

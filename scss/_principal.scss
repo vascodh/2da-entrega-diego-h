@@ -1,0 +1,90 @@
+// MAIN
+
+main {
+    grid-area: main;
+}
+h1 {
+    display: inline-block;
+    margin: 0px 10px
+}
+h2 {
+    font-weight: bold;
+    font-style: oblique;
+    margin: 10px;
+    text-align: center;
+}
+
+h3 {
+    margin: 10px;
+    text-align: center;
+}
+.colecciones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-top: 1px solid rgb(189, 189, 189);
+}
+
+.colecciones-w-card {
+    width: 18rem;
+}
+
+.subtitle {
+    border-bottom: 1px solid rgb(189, 189, 189);
+    padding-bottom: 10px ;
+}
+.coleccion {
+    &-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 550px;
+        margin: 10px;    
+        img {
+            height: 90%;
+            border-radius: 30px;
+        }
+    }
+}
+
+.descuento10 {
+    background-color: rgb(157, 235, 163);
+}
+
+.descuento20 {
+    background-color: rgb(109, 214, 118);
+}
+
+.register {
+    &-container {
+    display: flex;
+    justify-content: space-evenly;   
+    } 
+    &-image {
+        height: 400px;
+        width: 370px;
+        background-image: url("../assets/account.jpg");
+    }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.total {
+    &-compra {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.2em;
+        font-weight: 600;
+    }    
+}
+.faqs {
+    article {
+        text-align: center;
+    }
+}

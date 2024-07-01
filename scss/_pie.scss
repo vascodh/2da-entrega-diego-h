@@ -1,0 +1,33 @@
+/* #### FOOTER #### */
+
+footer {
+    grid-area: footer;
+}
+.foot {
+    display: flex;
+    flex-direction: column;
+    img {
+        height: 30px;
+        width: 30px;
+    }
+    p {
+        background-color: rgba(85, 82, 82, 0.568);
+        color: white;
+        text-align: center;
+    }
+}
+
+.redes {
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 1px solid rgb(189, 189, 189);
+    border-bottom: 1px solid rgb(189, 189, 189);
+    margin: 25px 0 20px;
+    padding: 20px 20px;    
+}
+.redes img:hover {
+    height: 40px;
+    width: 40px; 
+}
+
+ 
