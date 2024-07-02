@@ -1,3 +1,19 @@
+.d-fs-xs {
+  font-size: 10em;
+}
+
+.d-fs-sm {
+  font-size: 14em;
+}
+
+.d-fs-md {
+  font-size: 16em;
+}
+
+.d-fs-lg {
+  font-size: 20em;
+}
+
 /* ### Reset #### */
 html {
   box-sizing: border-box;

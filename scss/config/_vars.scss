@@ -7,3 +7,18 @@ $bg-color-header:  #bee4ff;
 //Background
 //background image body
 $bg-image-body: url("../assets/fondo.png");
+
+
+// MAPS
+
+$my-font-sizes: (
+    xs: 10em,
+    sm: 14em,
+    md: 16em,
+    lg: 20em,
+);
+@each $formato, $talle in $my-font-sizes {
+    .d-fs-#{$formato} {
+        font-size: $talle;
+    }
+}
