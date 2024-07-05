@@ -41,6 +41,10 @@ header {
     width: auto;
     border-radius: 80px;
 }
+.logos-menu {
+    width: 30px;
+    height: auto;
+}
 
 main {
     grid-area: main;
