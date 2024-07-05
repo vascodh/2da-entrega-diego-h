@@ -44,7 +44,7 @@ body {
   background-image: url("../assets/fondo.png");
 }
 
-/* Header */
+/* #### HEADER #### */
 header {
   grid-area: header;
   display: flex;
@@ -56,6 +56,11 @@ header {
   height: 150px;
   width: auto;
   border-radius: 80px;
+}
+
+.logos-menu {
+  width: 30px;
+  height: auto;
 }
 
 main {

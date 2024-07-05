@@ -1,5 +1,5 @@
 // HEADER
-/* Header */
+/* #### HEADER #### */
 header {
     grid-area: header;
     display: flex;
@@ -13,3 +13,7 @@ header {
     border-radius: 80px;
 }
 
+.logos-menu {
+    width: 30px;
+    height: auto;
+}
