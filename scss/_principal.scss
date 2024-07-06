@@ -1,12 +1,10 @@
 // MAIN
+/* #### MAIN #### */
 
 main {
     grid-area: main;
 }
-h1 {
-    display: inline-block;
-    margin: 0px 10px
-}
+
 h2 {
     font-weight: bold;
     font-style: oblique;
@@ -22,7 +20,7 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    border-top: 1px solid rgb(189, 189, 189);
+    border-top: $bd-sep;
 }
 
 .colecciones-w-card {
@@ -30,7 +28,7 @@ h3 {
 }
 
 .subtitle {
-    border-bottom: 1px solid rgb(189, 189, 189);
+    border-bottom: $bd-sep;
     padding-bottom: 10px ;
 }
 .coleccion {
@@ -49,11 +47,10 @@ h3 {
 }
 
 .descuento10 {
-    background-color: rgb(157, 235, 163);
+    background-color: $off10-color;
 }
-
 .descuento20 {
-    background-color: rgb(109, 214, 118);
+    background-color: $off20-color;
 }
 
 .register {
@@ -62,9 +59,8 @@ h3 {
     justify-content: space-evenly;   
     } 
     &-image {
-        height: 400px;
-        width: 370px;
-        background-image: url("../assets/account.jpg");
+        @include medidas(370px,400px);
+        background-image: $bg-account;
     }
 }
 
@@ -79,7 +75,6 @@ h3 {
         display: flex;
         flex-direction: column;
         align-items: center;
-        font-size: 1.2em;
         font-weight: 600;
     }    
 }

@@ -3,19 +3,28 @@ $title-ppal: "Dosis", sans-serif;
 
 // Colores
 $bg-color-header:  #bee4ff;
+$bd-sep-color: #bdbdbd;
+$bg-color-footer: #948d8d;
+$off10-color: #74d69d;
+$off20-color: #47b876;
+$text-color-footer: #ffffff;
+
+// Bordes
+$bd-sep: 1px solid $bd-sep-color;
 
 //Background
 //background image body
 $bg-image-body: url("../assets/fondo.png");
-
+$bg-account: url("../assets/account.jpg");
 
 // MAPS
 
 $my-font-sizes: (
-    xs: 10em,
-    sm: 14em,
-    md: 16em,
-    lg: 20em,
+    xs: 1rem,
+    sm: 1.2rem,
+    md: 1.4rem,
+    ll: 2rem,
+    xl: 2.5rem,
 );
 @each $formato, $talle in $my-font-sizes {
     .d-fs-#{$formato} {

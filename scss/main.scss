@@ -1,28 +1,18 @@
 /// VARS
 @import './config/vars';
 
+/// MIXINS
+@import './config/mixins';
+
 /* ### Reset #### */
 @import './config/reset';
 
 // Layout - Estructuras de HTML
 /* GRID LAYOUT */
-.grid-container {
-    margin-right: 50px;
-    margin-left: 50px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 2fr 0.3fr;
-    grid-template-areas:
-    "header header header"
-    "main   main   main"
-    "footer footer footer"
-    ;
-}
+@import './layout';
 
 /* BODY */
-body {
-    background-image: $bg-image-body;
-}
+@import './body';
 
 // Header
 @import './cabeza';

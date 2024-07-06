@@ -1,0 +1,9 @@
+@mixin medidas($w,$h) {
+    width: $w;
+    height: $h;
+}
+
+@mixin margenes-l-r($l,$r) {
+    margin-left: $l;
+    margin-right: $r;
+}
