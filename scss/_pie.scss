@@ -1,0 +1,31 @@
+/* #### FOOTER #### */
+
+footer {
+    grid-area: footer;
+}
+.foot {
+    display: flex;
+    flex-direction: column;
+    img {
+        @include medidas(30px, 30px)
+    }
+    p {
+        background-color: $bg-color-footer;
+        color: $text-color-footer;
+        text-align: center;
+    }
+}
+
+.redes {
+    display: flex;
+    justify-content: space-evenly;
+    border-top: $bd-sep;
+    border-bottom: $bd-sep;
+    margin: 25px 0 20px;
+    padding: 20px 20px;    
+}
+.redes img:hover {
+    @include medidas(40px, 40px);
+}
+
+ 

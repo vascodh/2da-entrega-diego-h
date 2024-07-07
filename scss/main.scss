@@ -1,0 +1,27 @@
+/// VARS
+@import './config/vars';
+
+/// MIXINS
+@import './config/mixins';
+
+/* ### Reset #### */
+@import './config/reset';
+
+// Layout - Estructuras de HTML
+/* GRID LAYOUT */
+@import './layout';
+
+/* BODY */
+@import './body';
+
+// Header
+@import './cabeza';
+
+// Main
+@import './principal';
+
+// Footer
+@import './pie';
+
+// Media queries
+@import './mq';

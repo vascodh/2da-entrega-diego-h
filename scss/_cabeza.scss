@@ -1,0 +1,22 @@
+// HEADER
+/* #### HEADER #### */
+header {
+    grid-area: header;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $bg-color-header;
+}
+
+.logo-celestina {
+    @include medidas(auto,150px);
+    border-radius: 80px;
+}
+
+.logos-menu {
+    @include medidas(30px, auto);    
+}
+
+h1 {
+    display: inline-block;
+    margin: 0px 10px
+}
