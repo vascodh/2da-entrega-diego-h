@@ -24,8 +24,12 @@ footer {
     margin: 25px 0 20px;
     padding: 20px 20px;    
 }
+.rotate-center {
+	-webkit-animation: rotate-center 0.6s ease-in-out both;
+	        animation: rotate-center 0.6s ease-in-out both;
+}
+/*
 .redes img:hover {
     @include medidas(40px, 40px);
 }
-
- 
+*/ 
