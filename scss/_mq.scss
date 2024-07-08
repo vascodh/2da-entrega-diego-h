@@ -14,7 +14,7 @@
         @include margenes-l-r(0px,0px);   
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.2fr 3fr .1fr;
+        grid-template-rows: 0.2fr 1.8fr .1fr;
         grid-template-areas:
         "header header"
         "main   main"        
@@ -25,10 +25,15 @@
          display: block;
     } 
 
-
     .logo-celestina {
         @include medidas(auto,100px);        
         border-radius: 100px;        
+    }
+    form label {
+        margin-top: 20px;
+    }  
+    .register-image{
+        display: none;
     }
 
 }
