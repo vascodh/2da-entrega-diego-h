@@ -59,8 +59,7 @@ h3 {
     justify-content: space-evenly;   
     } 
     &-image {
-        @include medidas(370px,400px);
-        background-image: $bg-account;
+        @include medidas(370px,400px);        
     }
 }
 
@@ -83,4 +82,9 @@ h3 {
     article {
         text-align: center;
     }
+}
+
+.shadow-pop-bl {
+	-webkit-animation: shadow-pop-bl 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	        animation: shadow-pop-bl 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 }
